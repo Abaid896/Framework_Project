@@ -1,0 +1,550 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #d8d8d8;
+  padding: 0 50px;
+  align-items: center;
+  color: #000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;  
+  align-items: center;
+  gap: 20px;
+}
+.list-page {
+  font-family: 'Arial', sans-serif;
+  padding: 50px;
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+.list-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+header a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+.container{
+  width: 1480px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.heading {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 30%;
+  text-align: center;
+}
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.item-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.item-card:hover {
+  transform: translateY(-10px);
+}
+.item-card h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+.item-card p {
+  font-size: 1.1em;
+  color: #555;
+}
+.flip-card {
+  width: 31%;
+  height: 500px;
+  perspective: 1000px;
+  margin: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.flip-card img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid white;
+}
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+    background: #f8dfe2;
+    border-bottom: 1px solid #ffb0b0;
+    margin: 20px auto;
+    
+    border-radius: 20px;
+  }
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+  }
+  .btn-outer {
+    margin: 50px auto 20px;
+  }
+  .App{
+    width: 1480px;
+    margin: 0 auto;
+  }
+ .CardBack {
+    background: #f8dfe2;
+    color: #000;
+    text-align: center;
+    height: 380px;
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+  
+  .flip-card-back {
+    background: #f8dfe2;
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+  }
+  .flip-card-bg {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 5px;
+    border-bottom: 1px solid #ffb0b0;
+    padding-bottom: 10px;
+  }
+  .flip-card-back p {
+    font-size: 20px;
+    margin: 30px;
+  }
+  .btn {
+    background: #ff9ea9;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0;
+    display: inline-block;
+  }
+  .flip-card .btn-outer{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+  }
+  .step-list {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 100px;
+  }
+  .step-list li {
+    padding: 10px;
+    width: 25%;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+  }
+  .step-list li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: 1px dashed #000;
+    top: 50%;
+    right: 50%;
+    z-index: -1;
+  }
+  .step-list li:first-child:after {
+    content: none;
+  }
+  .step-list h3 {
+    font-size: 40px;
+    margin: 5px auto;
+  }
+  img{
+    max-width: 100%;
+  }
+  .bg-color {
+    background: #f1f1f1;
+    padding-bottom: 100px;
+  }
+  .green {
+    color: #02a6b2;
+  }
+  .purple {
+    color: #9f68d0;
+  }
+  .yellow {
+    color: #f1c30e;
+  }
+  .red {
+    color: #ec163c;
+  }
+  .step-list p {
+    font-size: 28px;
+    margin: 10px;
+  }
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1em;
+  }
+  .explore-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .explore-btn:hover {
+    background-color: #0056b3;
+  }
+  .flipcard-page .flip-card {
+      margin: 50px auto;
+  }
+  .flipcard-page{
+    text-align: center;
+  }
+  .btn-for-next {
+    width: 300px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .mydict label {
+    width: 45%;
+    margin: 10px;
+  }
+
+  :focus {
+    outline: 0;
+    border-color: #02a6b2;
+    box-shadow: 0 0 0 4px #b5c9fc;
+  }
+  
+  .mydict div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+  
+  .mydict input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .mydict input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.163em #02a6b2;
+    background-color: #00d3e3;
+    z-index: 1;
+    color: #fff;
+  }
+  
+  label span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: #3e4963;
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  form {
+    width: 60%;
+    margin: 0 auto;
+  }
+  form div{
+    text-align: left;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+  .option-div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .div-breake .option{
+    width: 49%;
+  }
+  .div-breake {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .add-question {
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #8f8f9d;
+  }
+  .add-btn {
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    float: right;
+    margin: -15px 0;
+  }
+  .react-card-flip {
+    width: 47%;
+    margin: 0 1.5%;
+  }
+  form .btn{
+    margin: 20px auto;
+    display: inline-block;
+  }
+  .rating input {
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+}
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.hidden {
+    display: none;
+}
+.rating {
+  text-align: center;
+}
+.submit{
+  text-align: center;
+}
+.login-page {
+  text-align: center;
+}
+.login-page p {
+  display: flex;
+  justify-content: center;
+}
+.login-page p input {
+  width: auto;
+  margin: 0 5px 0px 0;
+}
+.login-page p a {
+  margin: 0 0px 0px 5px;
+}
+.div-break {
+  width: 50%;
+}
+.option {
+  display: flex;
+  align-items: baseline;
+}
+.option input {
+  width: auto;
+  margin: 10px;
+}
+.option div{
+  width: 90%;
+}
+.option div input {
+  width: 100%;
+  margin: 10px 0;
+}
+.col-md-3 {
+  width: 25%;
+}
+.col-md-9 {
+  width: 75%;
+  background: #eee;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 16px auto;
+}
+.list-quiz {
+  background: #eee;
+  padding: 30px;
+}
+.list-quiz li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+  margin: 10px auto;
+}
+.list-quiz li a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+
+
+/* flashcards == */
+
+
+.flashcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.flashcard {
+  width: 32%;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flashcard-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flashcard-front {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.flashcard-back {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  transform: rotateY(180deg);
+}
+.flashcard-front h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.flashcard  .btn {
+  background: #ff9ea9;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: aliceblue;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 20px 5px;
+  display: inline-block;
+  border: none;
+}
+.flashcard-front ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flashcard-front ul li{
+  width: 48%;
+  margin: 0 1%;
+}
+.flashcard-front input {
+  width: auto;
+  margin-right: 10px;
+}
+li {
+  margin: 5px 0;
+}
+.flashcard-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.flashcard-set {
+  width: 100%;
+  text-align: center;
+}
+.grade-rating{
+  width: 50%;
+  margin: 20px auto;
+  background: #d8d8d8;
+  padding: 10px 20px;
+}
+.grade-rating h2 {
+  text-align: center;
+  margin: 10px auto;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.grade-rating p {
+  display: flex;
+  justify-content: space-between;
+}
